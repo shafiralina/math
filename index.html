@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<title>Department of Mathematics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("b.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+  <a href="#home" class="w3-padding"><img src="logo.png" style="width:7%"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button w3-text-white">ABOUT</a>
+      <a href="#curr" class="w3-bar-item w3-button w3-text-white">CURRICULUMS</a>
+      <a href="#location" class="w3-bar-item w3-button w3-text-white">LOCATION</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-text-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-text-white">ABOUT</a>
+  <a href="#curr" onclick="w3_close()" class="w3-bar-item w3-button w3-text-white">CURRICULUMS</a>
+  <a href="#location" onclick="w3_close()" class="w3-bar-item w3-button w3-text-white">LOCATION</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left" style="padding:48px">
+    <p><div class="w3-jumbo w3-white w3-padding w3-large w3-margin-top w3-opacity">Department of Mathematics</div></p>
+	<div class="w3-large w3-black w3-padding w3-opacity" style="width:46%">Sepuluh Nopember Institute of Technology</div>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-white w3-xlarge" style="padding:24px 48px">
+    <a href="https://www.youtube.com/channel/UCVneHudrDWNBLBzNheLOazg"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+	<a href="https://www.instagram.com/himatika_its/?hl=id"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  </div>
+</header>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-white" style="padding:200px 16px" id="about">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>WHO ARE WE?</h3>
+      <p>The Mathematics Department of FMKSD ITS is one of the leading Mathematics Departments in Indonesia. The Department’s vision is to be a department with an international reputation in the fields of mathematics and computing and its applications that support science and technology, especially in the fields of industry, energy, marine, finance and information technology that are environmentally friendly.</p>
+      <p><a href="https://www.its.ac.id/matematika/" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Websites</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="gambar.jpeg" alt="Buildings">
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="curr">
+  <h3>CURRICULUMS</h3>
+  <p class="w3-large">Subject each Semester</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-quarter w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">1st</li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Geometri Analitik</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Logika Matematika</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Matematika 1</b></a></li>
+      </ul>
+    </div>
+    <div class="w3-quarter">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">2nd</li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Algoritma dan Pemrograman</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Aljabar Linier Elementer</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Matematika 2</b></a></li>
+      </ul>
+    </div>
+    <div class="w3-quarter w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">3rd</li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Kalkulus Peubah Kompleks</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Matematika Diskrit</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Metode Statistika</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button"><b>Pemrograman Berorientasi Objek</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button"><b>Riset Operasi 1</b></a></li>
+      </ul>
+    </div>
+	<div class="w3-quarter">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">4th</li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Aljabar 1</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button"><b>Metode Numerik</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button"><b>Perangkat Lunak Matematika</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button"><b>Persamaan Diferensial Biasa</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button"><b>Riset Operasi 2</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button"><b>Teori Peluang</b></a></li>
+      </ul>
+    </div>
+  </div><br>
+  <div class="w3-row-padding" style="margin-top:64px">
+  <div class="w3-quarter w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">5th</li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Aljabar 2</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Analisis 1</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Kalkulus Vektor</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button"><b>Matematia Statistika</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Persamaan Diferensial Parsial</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Teknik Simulasi</b></a></li>
+	  </ul>
+    </div>
+    <div class="w3-quarter">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">6th</li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Analisis 2</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Fungsi Peubah Kompleks</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Matematika Sistem</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button"><b>Metode Matematika</b></a></li>
+	  </ul>
+    </div>
+    <div class="w3-quarter w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">7th</li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Aljabar Linier</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Analisis Kombinatorik</b></a></li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Pemodelan Matematika</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button"><b>Penulisan Ilmiah Matematika</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button">Geometri</a></li>
+		<li class="w3-padding"><a href="#" class="w3-button">Data Mining</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Kecerdasan Buatan</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Kerja Praktik</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Pemodelan Matematika Sistem</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Pengantar Matematika Keuangan</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Pengantar Optimasi Dinamis</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Pengantar Teori Graph</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Pengendalian Kualitas</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Pengolahan Citra Digital</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Persamaan Beda</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Persamaan Diferensial Numerik</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Persamaan Diferensial Tak Linier</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Proses Stokastik</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Sistem Basis Data</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Struktur Data</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Teori Bilangan</a></li>
+        
+	  </ul>
+    </div>
+	<div class="w3-quarter">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">8th</li>
+        <li class="w3-padding"><a href="#" class="w3-button"><b>Tugas Akhir</b></a></li>
+		<li class="w3-padding"><a href="#" class="w3-button">Geometri Diferensial</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Kapita Selekta Aljabar</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Kapita Selekta Analisis </a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Teori Ukuran dan Integral</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Transformasi Fourier dan Wavelet</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Estimasi Optimum</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Pengantar Sistem Dinamik</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Perancangan Eksperimen</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Kapita Selekta Pemodelan, Sistem, dan Simulasi</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Kapita Selekta Stokastik, Optimasi, dan Resiko</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Metode Peramalan</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Metode Elemen Hingga</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Pengantar Analisis Resiko</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Pengantar Komputasi Dinamika Fluida </a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Persamaan Diferensial Parsial Numerik</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Desain dan Analisis Algoritma</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Rekayasa Perangkat Lunak</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Jaringan Syaraf Tiruan</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Logika Fuzzy</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Kriptografi</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Kapita Selekta Ilmu Komputasi</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Pengembangan Aplikasi Web</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Sistem Pendukung Keputusan</a></li>
+        <li class="w3-padding"><a href="#" class="w3-button">Teknologi Basis Data</a></li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey w3-center" style="padding:128px 16px" id="location">
+  <h3 class="w3-center">LOCATION</h3>
+  <p class="w3-center w3-large">Lets visit us:</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15830.51986499381!2d112.78591993900793!3d-7.282875153394233!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x78612619746d62ed!2sDepartemen+Matematika+ITS!5e0!3m2!1sen!2sid!4v1537858604397" frameborder="0"  style="border: 0px; pointer-events: none;" allowfullscreen="" height="250" width="500"></iframe>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+		<img src="mat.png" width="200">
+	</div>
+	<div class="w3-half w3-section">
+    <p>Gedung F Lantai II<br>
+	Kampus ITS, Keputih, Sukolilo-Surabaya 60111<br>
+	Phone: +62 31-5943354<br>
+	Fax: +62 31-5996506<br>
+	Email: matematika@its.ac.id</p>
+    </div>
+  </div>
+
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black ";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+    }
+}
+</script>
+
+</body>
+</html>
